@@ -1,0 +1,40 @@
+{
+	"SDKVersion": 2,
+	"Author": "Zaepho",
+	"CodePath": "app.html",
+	"Description": "ERCOT Grid Conditions Plugin",
+	"Name": "ERCOT Grid Conditions",
+	"Icon": "actions/template/assets/action",
+	"URL": "https://www.elgato.com/en/gaming/stream-deck",
+	"Version": "0.1.0",
+	"Software": {
+		"MinimumVersion": "5.0"
+	},
+	"OS": [
+		{
+			"Platform": "mac",
+			"MinimumVersion": "10.11"
+		},
+		{
+			"Platform": "windows",
+			"MinimumVersion": "10"
+		}
+	],
+	"Category": "Custom",
+	"CategoryIcon": "actions/template/assets/actionimage",
+	"Actions": [
+		{
+			"Icon": "actions/template/assets/actionimage",
+			"Name": "ERCOT Grid Conditions",
+			"Controllers": ["Keypad"],
+			"States": [
+				{
+					"Image": "actions/template/assets/action"
+				}
+			],
+			"Tooltip": "Display Current ERCOT Grid Conditions",
+			"UUID": "com.zaepho.ercot.grid_conditions",
+			"PropertyInspectorPath": "actions/template/property-inspector/inspector.html"
+		}
+	]
+}
