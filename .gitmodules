@@ -1,3 +1,6 @@
 [submodule "src/com.zaepho.ercot.sdPlugin/libs"]
 	path = src/com.zaepho.ercot.sdPlugin/libs
 	url = https://github.com/elgatosf/streamdeck-javascript-sdk
+[submodule ".\\src\\com.zaepho.ercot.sdPlugin\\libs"]
+	path = .\\src\\com.zaepho.ercot.sdPlugin\\libs
+	url = https://github.com/elgatosf/streamdeck-javascript-sdk
