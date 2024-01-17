@@ -4,7 +4,7 @@
 	"CodePath": "app.html",
 	"Description": "ERCOT Grid Conditions Plugin",
 	"Name": "ERCOT Grid Conditions",
-	"Icon": "actions/template/assets/action",
+	"Icon": "actions/global/assets/action",
 	"URL": "https://github.com/zaepho/streamdeck-plugin-ercot",
 	"Version": "0.1.0",
 	"Software": {
@@ -21,10 +21,10 @@
 		}
 	],
 	"Category": "ERCOT",
-	"CategoryIcon": "actions/template/assets/actionimage",
+	"CategoryIcon": "actions/global/assets/actionimage",
 	"Actions": [
 		{
-			"Icon": "actions/template/assets/actionimage",
+			"Icon": "actions/global/assets/actionimage",
 			"Name": "ERCOT Grid Conditions",
 			"States": [
 				{
