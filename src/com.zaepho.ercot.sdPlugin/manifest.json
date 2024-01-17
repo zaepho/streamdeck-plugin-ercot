@@ -28,13 +28,9 @@
 			"Name": "ERCOT Grid Conditions",
 			"States": [
 				{
-					"Name": "Unknown",
+					"Name": "Default State",
 					"Image": "actions/grid_condition/assets/level0",
-					"Title": "",
-					"TitleAlignment": "bottom",
-					"FontFamily": "Times New Roman",
-					"FontSize": "12",
-					"TitleColor": "#FFFFFF"
+					"Title": ""
 				}
 			],
 			"Controllers": [
