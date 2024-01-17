@@ -2,11 +2,11 @@
 	"SDKVersion": 2,
 	"Author": "Zaepho",
 	"CodePath": "app.html",
-	"Description": "ERCOT Grid Conditions Plugin",
+	"Description": "ERCOT Grid Conditions Plugin. This plugin brings the ERCOT Grid Conditions Dashboard to your StremDeck.",
 	"Name": "ERCOT Grid Conditions",
-	"Icon": "actions/global/assets/action",
+	"Icon": "actions/global/assets/ERCOT_icon",
 	"URL": "https://github.com/zaepho/streamdeck-plugin-ercot",
-	"Version": "0.1.0",
+	"Version": "0.1.1",
 	"Software": {
 		"MinimumVersion": "6.4"
 	},
@@ -21,10 +21,10 @@
 		}
 	],
 	"Category": "ERCOT",
-	"CategoryIcon": "actions/global/assets/actionimage",
+	"CategoryIcon": "actions/global/assets/ERCOT_icon",
 	"Actions": [
 		{
-			"Icon": "actions/global/assets/actionimage",
+			"Icon": "actions/global/assets/ERCOT_icon",
 			"Name": "ERCOT Grid Conditions",
 			"States": [
 				{
