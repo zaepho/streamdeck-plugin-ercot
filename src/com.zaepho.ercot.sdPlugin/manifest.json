@@ -6,7 +6,7 @@
 	"Name": "ERCOT Grid Conditions",
 	"Icon": "actions/global/assets/ERCOT_Icon",
 	"URL": "https://github.com/zaepho/streamdeck-plugin-ercot",
-	"Version": "1.0.0",
+	"Version": "1.0.1",
 	"Software": {
 		"MinimumVersion": "6.4"
 	},
