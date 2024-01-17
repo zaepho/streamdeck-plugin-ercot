@@ -29,7 +29,7 @@
 			"States": [
 				{
 					"Name": "Unknown",
-					"Image": "actions/grid_condition/assets/grid_condition_0",
+					"Image": "actions/grid_condition/assets/level0",
 					"Title": "Unknown",
 					"TitleAlignment": "middle",
 					"FontFamily": "Times New Roman",
@@ -38,7 +38,7 @@
 				},
 				{
 					"Name": "normal",
-					"Image": "actions/grid_condition/assets/grid_condition_0",
+					"Image": "actions/grid_condition/assets/level1",
 					"Title": "Normal",
 					"TitleAlignment": "middle",
 					"FontFamily": "Times New Roman",
@@ -47,7 +47,7 @@
 				},
 				{
 					"Name": "conservation",
-					"Image": "actions/grid_condition/assets/grid_condition_0",
+					"Image": "actions/grid_condition/assets/level2",
 					"Title": "Conservation",
 					"TitleAlignment": "middle",
 					"FontFamily": "Times New Roman",
@@ -56,7 +56,7 @@
 				},
 				{
 					"Name": "eea1",
-					"Image": "actions/grid_condition/assets/grid_condition_0",
+					"Image": "actions/grid_condition/assets/level3",
 					"Title": "EEA Level 1",
 					"TitleAlignment": "middle",
 					"FontFamily": "Times New Roman",
@@ -65,7 +65,7 @@
 				},
 				{
 					"Name": "eea2",
-					"Image": "actions/grid_condition/assets/grid_condition_0",
+					"Image": "actions/grid_condition/assets/level4",
 					"Title": "EEA Level 2",
 					"TitleAlignment": "middle",
 					"FontFamily": "Times New Roman",
@@ -74,7 +74,7 @@
 				},
 				{
 					"Name": "eea3",
-					"Image": "actions/grid_condition/assets/grid_condition_0",
+					"Image": "actions/grid_condition/assets/level5",
 					"Title": "EEA Level 3",
 					"TitleAlignment": "middle",
 					"FontFamily": "Times New Roman",
