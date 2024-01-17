@@ -37,40 +37,49 @@
 					"TitleColor": "#DCDCDC"
 				},
 				{
-					"Name": "eea_level: 0",
+					"Name": "normal",
 					"Image": "actions/grid_condition/assets/grid_condition_0",
 					"Title": "Normal",
 					"TitleAlignment": "middle",
 					"FontFamily": "Times New Roman",
 					"FontSize": 12,
-					"TitleColor": "#00FF7F"
+					"TitleColor": "#26D07C"
 				},
 				{
-					"Name": "eea_level: 1",
+					"Name": "conservation",
+					"Image": "actions/grid_condition/assets/grid_condition_0",
+					"Title": "Conservation",
+					"TitleAlignment": "middle",
+					"FontFamily": "Times New Roman",
+					"FontSize": 12,
+					"TitleColor": "#FFD100"
+				},
+				{
+					"Name": "eea1",
 					"Image": "actions/grid_condition/assets/grid_condition_0",
 					"Title": "EEA Level 1",
 					"TitleAlignment": "middle",
 					"FontFamily": "Times New Roman",
 					"FontSize": 12,
-					"TitleColor": "#FFD700"
+					"TitleColor": "#FF8200"
 				},
 				{
-					"Name": "eea_level: 2",
+					"Name": "eea2",
 					"Image": "actions/grid_condition/assets/grid_condition_0",
 					"Title": "EEA Level 2",
 					"TitleAlignment": "middle",
 					"FontFamily": "Times New Roman",
 					"FontSize": 12,
-					"TitleColor": "#FF0000"
+					"TitleColor": "#D5392E"
 				},
 				{
-					"Name": "eea_level: 3",
+					"Name": "eea3",
 					"Image": "actions/grid_condition/assets/grid_condition_0",
 					"Title": "EEA Level 3",
 					"TitleAlignment": "middle",
 					"FontFamily": "Times New Roman",
 					"FontSize": 12,
-					"TitleColor": "#FF0000"
+					"TitleColor": "#000000"
 				}
 			],
 			"Controllers": [
