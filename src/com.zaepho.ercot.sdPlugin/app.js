@@ -56,7 +56,7 @@ function grid_conditions_update(context) {
 				maxDecimals: 1
 		});
 		
-		let title = toTitleCase(data.current_condition.state) + '\n' + prc_value;
+		let title = prc_value;
 		let state_int = data.current_condition.eea_level + 1
 		
 		console.log('set title: ' + title);
