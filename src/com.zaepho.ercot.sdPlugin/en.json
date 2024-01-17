@@ -1,10 +1,10 @@
 {
-  "Description": "Use this to create your own plugin", 
-  "Name": "Stream Deck Template", 
-  "Category": "Templates", 
+  "Description": "ERCOT Grid Conditions Display", 
+  "Name": "ERCOT Grid Conditions", 
+  "Category": "ERCOT", 
   "com.zaepho.ercot.action": {
-    "Name": "Action", 
-    "Tooltip": "This is the only action in this plugin"
+    "Name": "Grid Conditions", 
+    "Tooltip": "Displays Current Grid Conditions"
   },
   "Localization": {
     "More info": "More info",
