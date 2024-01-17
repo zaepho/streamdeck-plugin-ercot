@@ -23,14 +23,14 @@ grid_conditions.onWillAppear(({ action, context, device, event, payload }) => {
 		0, 
 		Constants.hardwareAndSoftware
 	);
-	// grid_conditions_update(context);
-	// console.log("initializing update interval");
-	// if (grid_conditions_interval) {
-	// 	console.log('clearing interval...', grid_conditions_interval);
-    //     clearInterval(grid_conditions_interval);
-    //     grid_conditions_interval = null;
-	// }
-	// grid_conditions_interval = setInterval(() => grid_conditions_update(context), grid_conditions_update_minutes * 60 * 1000);
+	grid_conditions_update(context);
+	console.log("initializing update interval");
+	if (grid_conditions_interval) {
+		console.log('clearing interval...', grid_conditions_interval);
+        clearInterval(grid_conditions_interval);
+        grid_conditions_interval = null;
+	}
+	grid_conditions_interval = setInterval(() => grid_conditions_update(context), grid_conditions_update_minutes * 60 * 1000);
 
 });
 
