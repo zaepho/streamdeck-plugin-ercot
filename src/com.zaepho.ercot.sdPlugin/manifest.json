@@ -30,56 +30,11 @@
 				{
 					"Name": "Unknown",
 					"Image": "actions/grid_condition/assets/level0",
-					"Title": "Unknown",
+					"Title": "",
 					"TitleAlignment": "bottom",
 					"FontFamily": "Times New Roman",
-					"FontSize": 12,
-					"TitleColor": "#DCDCDC"
-				},
-				{
-					"Name": "normal",
-					"Image": "actions/grid_condition/assets/level1",
-					"Title": "Normal",
-					"TitleAlignment": "bottom",
-					"FontFamily": "Times New Roman",
-					"FontSize": 12,
-					"TitleColor": "#26D07C"
-				},
-				{
-					"Name": "conservation",
-					"Image": "actions/grid_condition/assets/level2",
-					"Title": "Conservation",
-					"TitleAlignment": "bottom",
-					"FontFamily": "Times New Roman",
-					"FontSize": 12,
-					"TitleColor": "#FFD100"
-				},
-				{
-					"Name": "eea1",
-					"Image": "actions/grid_condition/assets/level3",
-					"Title": "EEA Level 1",
-					"TitleAlignment": "bottom",
-					"FontFamily": "Times New Roman",
-					"FontSize": 12,
-					"TitleColor": "#FF8200"
-				},
-				{
-					"Name": "eea2",
-					"Image": "actions/grid_condition/assets/level4",
-					"Title": "EEA Level 2",
-					"TitleAlignment": "bottom",
-					"FontFamily": "Times New Roman",
-					"FontSize": 12,
-					"TitleColor": "#D5392E"
-				},
-				{
-					"Name": "eea3",
-					"Image": "actions/grid_condition/assets/level5",
-					"Title": "EEA Level 3",
-					"TitleAlignment": "bottom",
-					"FontFamily": "Times New Roman",
-					"FontSize": 12,
-					"TitleColor": "#000000"
+					"FontSize": "12",
+					"TitleColor": "#FFFFFF"
 				}
 			],
 			"Controllers": [
@@ -87,7 +42,7 @@
 			],
 			"DisableAutomaticStates": true,
 			"Tooltip": "Display Current ERCOT Grid Conditions",
-			"UUID": "com.zaepho.ercot.grid_conditions",
+			"UUID": "com.zaepho.ercot.grid-conditions",
 			"UserTitleEnabled": false
 		}
 	]

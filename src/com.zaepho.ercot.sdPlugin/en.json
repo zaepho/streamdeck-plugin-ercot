@@ -2,19 +2,17 @@
   "Description": "ERCOT Grid Conditions Display", 
   "Name": "ERCOT Grid Conditions", 
   "Category": "ERCOT", 
-  "com.zaepho.ercot.action": {
+  "com.zaepho.ercot.grid-conditions": {
     "Name": "Grid Conditions", 
     "Tooltip": "Displays Current Grid Conditions"
   },
   "Localization": {
-    "More info": "More info",
-    "Message": "Message",
-    "Click Me": "Click Me",
-    "Button": "Button",
-    "More": "More",
-    "My name": "My name",
-    "My title": "My title",
-    "My message": "My message",
-    "My button": "My button"
+    "Unknown": "Unknown",
+    "Normal Conditions": "Normal Conditions",
+    "Conservation": "Conservation",
+    "Emergency Lvl 1": "Emergency Lvl 1",
+    "Emergency Lvl 2": "Emergency Lvl 2",
+    "Emergency Lvl 3": "Emergency Lvl 3"
+    
   }
 }
