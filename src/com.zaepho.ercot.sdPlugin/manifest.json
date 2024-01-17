@@ -20,21 +20,64 @@
 			"MinimumVersion": "10"
 		}
 	],
-	"Category": "Custom",
+	"Category": "ERCOT",
 	"CategoryIcon": "actions/template/assets/actionimage",
 	"Actions": [
 		{
-			"Icon": "actions/template/assets/actionimage",
 			"Name": "ERCOT Grid Conditions",
+			"UUID": "com.zaepho.ercot.grid_conditions",
+			"Tooltip": "Display Current ERCOT Grid Conditions",
 			"Controllers": ["Keypad"],
+			"UserTitleEnabled": false,
+			"DisableAutomaticStates": true,
+			"Icon": "actions/template/assets/actionimage",
 			"States": [
 				{
-					"Image": "actions/template/assets/action"
+					"Name": "Unknown",
+					"Image": "actions/grid_condition/assets/grid_condition_0",
+					"Title": "Unknown",
+					"TitleAlignment": "middle",
+					"FontFamily": "Times New Roman",
+					"FontSize": 12,
+					"TitleColor": "#DCDCDC"
+				},
+				{
+					"Name": "eea_level: 0",
+					"Image": "actions/grid_condition/assets/grid_condition_0",
+					"Title": "Normal",
+					"TitleAlignment": "middle",
+					"FontFamily": "Times New Roman",
+					"FontSize": 12,
+					"TitleColor": "#00FF7F"
+				},
+				{
+					"Name": "eea_level: 1",
+					"Image": "actions/grid_condition/assets/grid_condition_0",
+					"Title": "EEA Level 1",
+					"TitleAlignment": "middle",
+					"FontFamily": "Times New Roman",
+					"FontSize": 12,
+					"TitleColor": "#FFD700"
+				},
+				{
+					"Name": "eea_level: 2",
+					"Image": "actions/grid_condition/assets/grid_condition_0",
+					"Title": "EEA Level 2",
+					"TitleAlignment": "middle",
+					"FontFamily": "Times New Roman",
+					"FontSize": 12,
+					"TitleColor": "#FF0000"
+				},
+				{
+					"Name": "eea_level: 3",
+					"Image": "actions/grid_condition/assets/grid_condition_0",
+					"Title": "EEA Level 3",
+					"TitleAlignment": "middle",
+					"FontFamily": "Times New Roman",
+					"FontSize": 12,
+					"TitleColor": "#FF0000"
 				}
-			],
-			"Tooltip": "Display Current ERCOT Grid Conditions",
-			"UUID": "com.zaepho.ercot.grid_conditions",
-			"PropertyInspectorPath": "actions/template/property-inspector/inspector.html"
+			]
 		}
 	]
 }
