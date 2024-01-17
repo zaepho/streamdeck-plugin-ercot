@@ -4,7 +4,7 @@
 	"CodePath": "app.html",
 	"Description": "ERCOT Grid Conditions Plugin. This plugin brings the ERCOT Grid Conditions Dashboard to your StremDeck.",
 	"Name": "ERCOT Grid Conditions",
-	"Icon": "actions/global/assets/Plugin_Icon.png",
+	"Icon": "actions/global/assets/ERCOT_Icon",
 	"URL": "https://github.com/zaepho/streamdeck-plugin-ercot",
 	"Version": "0.1.1",
 	"Software": {
