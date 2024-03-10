@@ -1,6 +1,7 @@
 /// <reference path="libs/js/action.js" />
 /// <reference path="libs/js/stream-deck.js" />
 /// <reference path="timers.js" />
+/// <reference path="humanformat.js" />
 
 const grid_conditions = new Action('com.zaepho.ercot.grid-conditions');
 const grid_conditions_update_minutes = 5
@@ -8,14 +9,15 @@ const grid_conditions_update_minutes = 5
 let grid_conditions_interval = null;
 /**
  * The first event fired when Stream Deck starts
+ * 
  */
 $SD.onConnected(({ actionInfo, appInfo, connection, messageType, port, uuid }) => {
-	console.log('Stream Deck connected!');
+	logMessage(context, 'Stream Deck connected!');	
 });
 
 grid_conditions.onWillAppear(({ action, context, device, event, payload }) => {
 	// Set to Unknown State to begin with
-	console.log('grid_conditions.onWillAppear: Set Default State');
+	logMessage(context, 'grid_conditions.onWillAppear: Set Default State');
 	$SD.send(Events.setState, context, { "state": 0 })
 	$SD.setImage(
 		context, 
@@ -24,9 +26,9 @@ grid_conditions.onWillAppear(({ action, context, device, event, payload }) => {
 		Constants.hardwareAndSoftware
 	);
 	grid_conditions_update(context);
-	console.log("initializing update interval");
+	logMessage(context, "initializing update interval");
 	if (grid_conditions_interval) {
-		console.log('clearing interval...', grid_conditions_interval);
+		logMessage(context, 'clearing interval...', grid_conditions_interval);
         clearInterval(grid_conditions_interval);
         grid_conditions_interval = null;
 	}
@@ -37,19 +39,24 @@ grid_conditions.onWillAppear(({ action, context, device, event, payload }) => {
 // TODO: Clear interval when disappearing
 
 grid_conditions.onKeyUp(({ action, context, device, event, payload }) => {
-	console.log('grid_conditions: onKeyup');
+	logMessage(context, 'grid_conditions: onKeyup');
 	grid_conditions_update(context);
 });
 
+function logMessage(context, msg) {
+	console.log(msg);
+	$SD.send(Events.logMessage, context, {"message": msg});
+}
+
 function grid_conditions_update(context) {
-	console.log('START: grid_conditions_update');
+	logMessage(context, 'START: grid_conditions_update');
 	// Grid Conditions JSON: 'https://www.ercot.com/api/1/services/read/dashboards/daily-prc.json'
 	let url = 'https://www.ercot.com/api/1/services/read/dashboards/daily-prc.json';
 
-	console.log("Fetching data...");
+	logMessage(context, "Fetching data...");
 	getJSON(url).then(data => {
-		console.log(data);
-		console.log('current_condition state: ' + data.current_condition.state);
+		logMessage(context, data);
+		logMessage(context, 'current_condition state: ' + data.current_condition.state);
 		// var humanFormat = require("human-format");
 		var wattScale = new humanFormat.Scale.create(
 			["MW", "GW"], 
@@ -63,9 +70,9 @@ function grid_conditions_update(context) {
 		});
 		
 		let state_int = data.current_condition.eea_level + 1
-		console.log('set state: ' + state_int);
+		logMessage(context, 'set state: ' + state_int);
 		let svg_str = `data:image/svg+xml;charset=utf8,${getGridConditionSVG(state_int, prc_value)}`;
-		console.log('svg_str: ' + svg_str);
+		logMessage(context, 'svg_str: ' + svg_str);
 		$SD.setImage(
 			context, 
 			svg_str,
@@ -74,6 +81,7 @@ function grid_conditions_update(context) {
 		);
 	}).catch(error => {
 		console.error(error);
+		logMessage(context, error);
 		// set unknown state and throw warning icon
 	});
 };
